@@ -1,0 +1,198 @@
+<!DOCTYPE html>;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+   
+
+
+    <title>MEMBERS PAGE</title>
+</head>
+<body>
+
+
+
+
+
+
+
+<div class="bar" style="background-color: black;">
+
+  
+
+
+
+
+
+    <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div  class="container-fluid">
+          <a class="navbar-brand" style="font-family:Arial, Helvetica, sans-serif ; font-weight: bolder; font-size: x-large;" href="#">Team Reporter App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" style="font-family:Arial, Helvetica, sans-serif ; font-weight: bolder; font-size: x-large;" aria-current="page" href="#">Home</a>
+              </li>
+              </li>
+              
+            
+            </ul>
+          </div>
+        </div>
+        <form class="d-flex">
+
+            
+        <a class="btn btn-primary"    style="margin-right: 10px;" id="logout" href="login.html" role="button">LogOut</a>
+        
+<!-- <button type="submit"  href = "index.html"   class="btn btn-primary">LogOut</button>    </form> -->
+      </nav>
+
+
+    </div>
+
+
+
+
+<div class="main-div">
+
+
+<div class="team" >
+<h2>
+  Team You Own 
+</h2>
+
+</div>
+
+
+
+
+<div style="border: 1px solid black;" id="list">
+
+
+  <!-- <ul style="border: 1px solid black;" id="list"> -->
+
+
+</div>
+
+
+
+
+
+
+
+<div class="pop">
+
+
+
+
+
+    
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  
+  
+  
+  <button class="open-button"  onclick="openForm()">+</button>
+  
+  <div class="form-popup" id="myForm">
+    <form action="member.html" class="form-container">
+      <h1>Create a new team</h1>
+  
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Team name</label>
+        <!-- <input type="text" placeholder="User name" class="form-control" id="todo-item" aria-describedby="textHelp"> -->
+        <input type="text" id="todo-item" >
+        <div id="textHelp" class="form-text"></div>
+      </div>
+  
+  
+      <div class="input-group mb-3">
+          
+        <select class="form-select" id="">
+          <option selected>Select Category</option>
+          <option value="1">Teating Team</option>
+          <option value="2">Developer Team</option>
+          <option value="3">Marketing Team</option>
+        </select>
+      </div>
+  
+  
+
+
+      
+  
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" placeholder="invite members (type gmail)" class="form-control" id="" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+    </form> 
+  <div>
+
+
+    
+
+    <button  onclick="create(); closeForm() " id="createbtn"   class="btn">Create</button>     
+
+    <button  type="submit" hre id="cancel" class="btn cancel"  onclick="closeForm()">Close</button>
+  
+  </div>
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="app.js"></script>
+  
+  
+  
+  
+
+
+
+<div class="plus">
+  <button class="open-button" onclick="openForm()">+</button>
+  <button id="dltall" class="open-button" onclick="dltall()">Delete All</button>
+</div>
+
+
+</div>
+
+
+
+
+
+<script src="app.js"></script>
+    
+</body>
+</html>
